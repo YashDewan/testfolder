@@ -8,15 +8,15 @@
 
 @media only screen and (max-width: 470px){
     .menu li a{
-        font-size: 15px;
+        font-size: 14px;
     }
-    .indoeffect-logo{
+    /* .indoeffect-logo{
         padding: 0;
     }
     .indoeffect-logo img{
         width: 100px;
         height: auto;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1025px){
@@ -31,9 +31,15 @@
     }
 }
 
+@media only screen and (max-width: 402px){
+    .menu li a{
+        font-size: 13px;
+    }
+}
+
 @media only screen and (max-width: 386px){
     .menu li a{
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
@@ -61,9 +67,6 @@
         margin: 44px 10px;
         font-weight: bold;
     }
-    .alert-none{
-        display: none;
-    }
 }
 
 /* Blue Nav : */
@@ -76,7 +79,32 @@
 @media only screen and (max-width: 874px){
     .no_tab_menu{
         display: none;
-    }}
+    }
+}
+
+/* Alert LIVE NEWS */
+
+@media only screen and (max-width: 768px){
+    .alert-none .str-alert{
+        font-size: 14px;
+    }
+    #live-news{
+        font-size: 14px;
+    }
+    .alert{
+        height: 25px;
+    }
+    .alert-none button{
+        padding: 0;
+        margin: 0;
+    }
+    .alert-dismissible .btn-close{
+        position: absolute;
+        top: -3px;
+        right: 0;
+    }
+}
+
 
 /* Section 1 : */
 

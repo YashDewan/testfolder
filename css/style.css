@@ -206,6 +206,7 @@
   text-decoration: none;
   color: #111;
   font-size: 29px;
+  font-family: opensans;
 }
 
 .card-body a:hover {
@@ -236,7 +237,7 @@
   margin-top: 40px;
   margin-bottom: 20px;
   text-align: center;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Balsamiq Sans', sans-serif;
   background-color: #418fde;
   padding: 3px 0px;
 }
@@ -356,6 +357,10 @@ footer{
 
 .f_name a{
   text-decoration: none;
+}
+
+.f_name h1{
+  font-family: 'Roboto', sans-serif;
 }
 
 .f_icons{
