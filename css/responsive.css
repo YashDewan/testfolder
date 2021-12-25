@@ -10,13 +10,13 @@
     .menu li a{
         font-size: 14px;
     }
-    /* .indoeffect-logo{
+    .indoeffect-logo{
         padding: 0;
     }
     .indoeffect-logo img{
         width: 100px;
         height: auto;
-    } */
+    }
 }
 
 @media only screen and (max-width: 1025px){
@@ -37,7 +37,7 @@
     }
 }
 
-@media only screen and (max-width: 386px){
+@media only screen and (max-width: 387px){
     .menu li a{
         font-size: 11px;
     }

@@ -37,6 +37,7 @@
   color: #111;
   font-size: 1.6875rem;
   padding: 10px;
+  font-weight: bold;
 }
 
 .menu li a:hover {
@@ -407,4 +408,18 @@ footer{
   width: 50px;
   text-align: center;
   text-decoration: none;
+}
+
+
+
+
+.christmas-santa-gif{
+  /* float: right; */
+  font-family: 'Balsamiq Sans';
+  font-family: 'Mountains of Christmas';
+  font-weight: bold;
+  font-size: 30px;
+}
+.christmas-santa-gif img{
+  height: 100px;
 }

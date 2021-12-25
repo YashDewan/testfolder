@@ -69,13 +69,13 @@ function breakingnews1(){
 
     let dataobj = data.articles;
     html = `<div class="card">
-    <a href="${dataobj[1]['url']} target="_blank">
-      <img src="${dataobj[1]['urlToImage']}" class="card-img-top" alt="..." />
+    <a href="${dataobj[2]['url']} target="_blank">
+      <img src="${dataobj[2]['urlToImage']}" class="card-img-top" alt="..." />
     </a>
     <div class="card-body">
       <h2 class="card-text">
-      <a href="${dataobj[1]['url']} target="_blank">
-        ${dataobj[1]['title']}
+      <a href="${dataobj[2]['url']} target="_blank">
+        ${dataobj[2]['title']}
         </a>
       </h2>
     </div>
