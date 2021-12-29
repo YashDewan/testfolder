@@ -72,7 +72,7 @@ function breakingnews1(){
     <a href="${dataobj[2]['url']} target="_blank">
       <img src="${dataobj[2]['urlToImage']}" class="card-img-top" alt="..." />
     </a>
-    <div class="card-body">
+    <div class="card-body" style="padding: 5px">
       <h2 class="card-text">
       <a href="${dataobj[2]['url']} target="_blank">
         ${dataobj[2]['title']}
@@ -100,7 +100,7 @@ function breakingnews2(){
     <a href="${dataobj[17]['url']} target="_blank">
       <img src="${dataobj[17]['urlToImage']}" class="card-img-top" alt="..." />
     </a>
-    <div class="card-body">
+    <div class="card-body" style="padding: 3px">
       <h4 class="card-text">
         <a href="${dataobj[17]['url']} target="_blank">
         ${dataobj[17]['title']}
@@ -128,7 +128,7 @@ function breakingnews3(){
     <a href="${dataobj[10]['url']} target="_blank">
       <img src="${dataobj[10]['urlToImage']}" class="card-img-top" alt="..." />
     </a>
-    <div class="card-body">
+    <div class="card-body" style="padding: 3px">
       <h4 class="card-text">
       <a href="${dataobj[10]['url']} target="_blank">
         ${dataobj[10]['title']}
@@ -222,7 +222,7 @@ function catagory_entertainment(){
       html = `<h2 class="section2_heading"><a href="#"> ENTERTAINMENT </a></h2>
               <a href="${dataobj[0]['url']} target="_blank"><img class="section2_img" src="${dataobj[0]['urlToImage']}" alt=".."></a>
               <h4 class="section2_title"><a href="${dataobj[0]['url']} target="_blank">${dataobj[0]['title']} </a></h4>
-              <p class="section2_desc1">${dataobj[0]['content']} </a></p>
+              <p class="section2_desc1">${dataobj[0]['content']} </a> <a href="${dataobj[0]['url']}" target="_blank" > Read more...</a> </p>
               <p class="section2_desc1">${dataobj[0]['description']} </a></p>`;
       entertainment.innerHTML = html;
     })
@@ -255,7 +255,7 @@ function catagory_science(){
     html = `<h2 class="section2_heading"><a href="#">SCIENCE</a></h2>
             <a href="${dataobj[0]['url']} target="_blank"><img class="section2_img" src="${dataobj[0]['urlToImage']}" alt=".."></a>
             <h4 class="section2_title"><a href="${dataobj[0]['url']} target="_blank">${dataobj[0]['title']} </a></h4>
-            <p class="section2_desc1">${dataobj[0]['content']} </a></p>
+            <p class="section2_desc1">${dataobj[0]['content']} </a> <a href="${dataobj[0]['url']}" target="_blank" > Read more...</a></p>
             <p class="section2_desc1">${dataobj[0]['description']} </a></p>`;
     science.innerHTML = html;
   })
@@ -288,7 +288,7 @@ function catagory_sports(){
     html = `<h2 class="section2_heading"><a href="#">SPORTS</a></h2>
             <a href="${dataobj[0]['url']} target="_blank"><img class="section2_img" src="${dataobj[0]['urlToImage']}" alt=".."></a>
             <h4 class="section2_title"><a href="${dataobj[0]['url']} target="_blank">${dataobj[0]['title']} </a></h4>
-            <p class="section2_desc1">${dataobj[0]['content']} </a></p>
+            <p class="section2_desc1">${dataobj[0]['content']} <a href="${dataobj[0]['url']}" target="_blank" > Read more...</a> </p>
             <p class="section2_desc1">${dataobj[0]['description']} </a></p>`;
             sports.innerHTML = html;
   })
@@ -321,7 +321,7 @@ function catagory_tech(){
     html = `<h2 class="section2_heading"><a href="#">technology</a></h2>
             <a href="${dataobj[0]['url']} target="_blank"><img class="section2_img" src="${dataobj[0]['urlToImage']}" alt=".."></a>
             <h4 class="section2_title"><a href="${dataobj[0]['url']} target="_blank">${dataobj[0]['title']} </a></h4>
-            <p class="section2_desc1">${dataobj[0]['content']} </a></p>
+            <p class="section2_desc1">${dataobj[0]['content']} </a> <a href="${dataobj[0]['url']}" target="_blank" > Read more...</a> </p>
             <p class="section2_desc1">${dataobj[0]['description']} </a></p>`;
             tech.innerHTML = html;
   })
@@ -354,7 +354,7 @@ function catagory_health(){
     html = `<h2 class="section2_heading"><a href="#">health</a></h2>
             <a href="${dataobj[0]['url']} target="_blank"><img class="section2_img" src="${dataobj[0]['urlToImage']}" alt=".."></a>
             <h4 class="section2_title"><a href="${dataobj[0]['url']} target="_blank">${dataobj[0]['title']} </a></h4>
-            <p class="section2_desc1">${dataobj[0]['content']} </a></p>
+            <p class="section2_desc1">${dataobj[0]['content']} <a href="${dataobj[0]['url']}" target="_blank" > Read more...</a></p>
             <p class="section2_desc1">${dataobj[0]['description']} </a></p>`;
             health.innerHTML = html;
   })
@@ -387,7 +387,7 @@ function catagory_business(){
     html = `<h2 class="section2_heading"><a href="#">business</a></h2>
             <a href="${dataobj[0]['url']} target="_blank"><img class="section2_img" src="${dataobj[0]['urlToImage']}" alt=".."></a>
             <h4 class="section2_title"><a href="#">${dataobj[0]['title']} </a></h4>
-            <p class="section2_desc1">${dataobj[0]['content']} </a></p>
+            <p class="section2_desc1">${dataobj[0]['content']} <a href="${dataobj[0]['url']}" target="_blank" > Read more...</a> </p>
             <p class="section2_desc1">${dataobj[0]['description']} </a></p>`;
             business.innerHTML = html;
   })

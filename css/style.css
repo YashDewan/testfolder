@@ -194,6 +194,16 @@
   margin: 12px;
 }
 
+.topstories-searchbar button{
+  border-color: #418fde;
+  color: #418fde;
+}
+
+.topstories-searchbar button:hover{
+  background-color: #418fde;
+  border-color: #418fde;
+}
+
 .topstories-searchbar form{
   display: flex;
 }
@@ -207,7 +217,6 @@
   text-decoration: none;
   color: #111;
   font-size: 29px;
-  font-family: opensans;
 }
 
 .card-body a:hover {
@@ -408,18 +417,4 @@ footer{
   width: 50px;
   text-align: center;
   text-decoration: none;
-}
-
-
-
-
-.christmas-santa-gif{
-  /* float: right; */
-  font-family: 'Balsamiq Sans';
-  font-family: 'Mountains of Christmas';
-  font-weight: bold;
-  font-size: 30px;
-}
-.christmas-santa-gif img{
-  height: 100px;
 }
