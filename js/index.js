@@ -22,7 +22,9 @@ let business = document.getElementById('section2_business');
 let br_news1 = document.getElementById('br_news1');
 let br_news2 = document.getElementById('br_news2');
 let br_news3 = document.getElementById('br_news3');
-
+// newspage
+let newspage = document.getElementById('newspage');
+let newsbtn = document.getElementById('news-menu-btn');
 
 // 
 
@@ -74,9 +76,7 @@ function breakingnews1(){
     </a>
     <div class="card-body" style="padding: 5px">
       <h2 class="card-text">
-      <a href="${dataobj[2]['url']} target="_blank">
         ${dataobj[2]['title']}
-        </a>
       </h2>
     </div>
     </div>`;
@@ -102,9 +102,7 @@ function breakingnews2(){
     </a>
     <div class="card-body" style="padding: 3px">
       <h4 class="card-text">
-        <a href="${dataobj[17]['url']} target="_blank">
         ${dataobj[17]['title']}
-        </a>
       </h4>
     </div>
     </div>`;
@@ -130,9 +128,7 @@ function breakingnews3(){
     </a>
     <div class="card-body" style="padding: 3px">
       <h4 class="card-text">
-      <a href="${dataobj[10]['url']} target="_blank">
         ${dataobj[10]['title']}
-        </a>
       </h4>
     </div>
     </div>`;
@@ -461,6 +457,50 @@ function delnotes(index){
   localStorage.setItem("notes",JSON.stringify(notesObj));
   shownotes();
 }
+
+
+
+
+
+
+
+// newspage
+
+newsbtn.addEventListener('click',()=>{ 
+  let html = '';
+  let category = "entertainment";
+  let country = "in";
+
+  let url = `https://saurav.tech/NewsAPI/top-headlines/category/${category}/${country}.json`;
+
+  fetch(url).then((response) => {
+    return response.json();
+  }).then((data)=>{
+    console.log("entertainment - NEWS");
+    console.log(data);
+
+    let dataobj = data.articles;
+    // console.log(data.articles[0].content);
+
+    if(dataobj[0]['content'] == null){
+      dataobj[0]['content'] = `ERROR ! ❌ - can't show the content right Now .. <a href="">read more</a>`;
+    }else if(dataobj[0]['description'] == null){
+      dataobj[0]['content'] = `ERROR ! ❌ - can't show the content right Now .. <a href="">read more</a>`;
+    }else if(dataobj[0]['title'] == null){
+      dataobj[0]['content'] = `ERROR ! ❌ - can't show the content right Now .. <a href="">read more</a>`;
+    }
+
+    html = `
+            <a href="${dataobj[0]['url']} target="_blank"><img class="section2_img" src="${dataobj[0]['urlToImage']}" alt=".."></a>
+            <h4 class="section2_title"><a href="${dataobj[0]['url']} target="_blank">${dataobj[0]['title']} </a></h4>
+            <p class="section2_desc1">${dataobj[0]['content']} </a> <a href="${dataobj[0]['url']}" target="_blank" > Read more...</a> </p>
+            <p class="section2_desc1">${dataobj[0]['description']} </a></p>`;
+    newspage.innerHTML = html;
+  })
+})
+
+
+
 
 
 
